@@ -11,6 +11,7 @@ class Tip1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue,
         title: const Text('Tip #1'),
       ),
       body: Center(
@@ -24,11 +25,10 @@ class Tip1 extends StatelessWidget {
                 fontSize: 30,
               ),
             ),
-            if (renderVal) ...const [
-              ColoredContainer(),
-              ColoredContainer(),
-            ] else
-              const Text('No container rendered!')
+            if (renderVal) ...[
+              const ColoredContainer(),
+              const ColoredContainer()
+            ],
           ],
         ),
       ),
