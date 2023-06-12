@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Tips/tip_1.dart';
 import 'Tips/tip_2.dart';
 import 'Tips/tip_3.dart';
 import 'Tips/tip_4.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Tip4(),
+      home: const Tip1(),
     );
   }
 }
